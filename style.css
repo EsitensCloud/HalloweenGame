@@ -1,0 +1,36 @@
+body{
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+}
+.block1{
+    text-align: center;
+    background-color: rgb(236, 226, 169);
+    width: 330px;
+    padding: 25px;
+    border-radius: 20px;
+    color: black;
+    margin: auto;
+    margin-top: 200px;
+    
+}
+
+h1{
+    color: rgb(238, 141, 30);
+    font-size: 40px;
+}
+.block2{
+    margin-top: 10px;
+}
+h2{
+    font-size: 30px;
+}
+
+.check{
+    background-color: rgb(238, 141, 30);
+    padding: 13px;
+    width: 130px;
+    border-radius: 18px;
+}
