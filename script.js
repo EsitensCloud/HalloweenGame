@@ -38,6 +38,6 @@ function Check(){
     document.querySelector(".num").innerHTML = randomNumber
     document.querySelector(".balance").innerHTML = "Твой баланс: " + money + " конфет"
 }
-document.querySelector(".audio1").volume = 0.04
-document.querySelector(".audio2").volume = 0.04
+document.querySelector(".audio1").volume = 0.5
+document.querySelector(".audio2").volume = 0.5
 document.querySelector(".check").addEventListener("click",Check)
