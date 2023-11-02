@@ -3,7 +3,7 @@ var money = 100
 function Check(){
     if(audio === false){
         audio = true
-        document.querySelector("audio").play()
+        document.querySelector(".audio1").play()
     }
     document.querySelector(".help").innerHTML = ""
     let playerNumber = document.querySelector(".number").value
@@ -31,8 +31,13 @@ function Check(){
         money -= playerBet
         document.querySelector(".result").innerHTML = "Ты програл"
     }
+    if(money <= 0){
+        document.querySelector(".audio2").play()
+        document.querySelector(".hidden").classList.remove("hidden")
+    }
     document.querySelector(".num").innerHTML = randomNumber
     document.querySelector(".balance").innerHTML = "Твой баланс: " + money + " конфет"
 }
-document.querySelector("audio").volume = 0.04
+document.querySelector(".audio1").volume = 0.04
+document.querySelector(".audio2").volume = 0.04
 document.querySelector(".check").addEventListener("click",Check)
